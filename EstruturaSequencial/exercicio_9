@@ -1,0 +1,5 @@
+#9. Faça um Programa que peça a temperatura em graus Fahrenheit, transforme e mostre a temperatura em graus Celsius.#
+
+f = int(input('Qual temperatura do momento em Fahrenheit? '))
+c = 5 * ((f-32)/9)
+print('A temperatura em celsius é', round(c))
