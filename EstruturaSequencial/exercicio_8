@@ -1,0 +1,5 @@
+#8. Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.#
+
+valor_h = float(input('Quantos reais você ganha por hora? '))
+horas_m = int(input('Quantas horas você trabalha por mês? '))
+print('O valor do seu salário ao final do mês é R$', valor_h*horas_m)
