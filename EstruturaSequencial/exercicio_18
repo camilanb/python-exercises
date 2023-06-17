@@ -1,0 +1,6 @@
+#18. Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).
+
+arq_mb = int(input("Informe o tamanho do arquivo, somente o número (Mb) "))
+vel_mbps = int(input("Informe a velocidade de um link de internet, somente o número, em minutos (Mbps)"))
+
+print("O tempo aproximado de download do arquivo é:", arq_mb/vel_mbps, "minutos")
