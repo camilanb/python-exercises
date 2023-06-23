@@ -1,0 +1,15 @@
+# 9. Faça um Programa que leia três números e mostre-os em ordem decrescente:
+
+lista = []
+n = input("Informe três números separados por espaços: ")
+
+lista1 = n.split() # separando os números inseridos na lista n, inserindo na lista1
+print(lista1)
+
+for num in lista1: # para cada num da lista n
+  lista.append(int(num)) # adicione à lista e converta de str pra int
+
+print(type(lista[0]))
+
+lista.sort(reverse=True) # faça a ordenação dos números, em ordem decrescente
+print(lista)
