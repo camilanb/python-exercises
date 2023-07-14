@@ -1,0 +1,36 @@
+# 18. Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
+
+data_inteira = (input('Informe uma data no formato DD/MM/AAAA para verificação de data válida: '))
+dia = int(data_inteira.split('/')[0])
+print(data_inteira)
+#print(dia)
+
+mes = int(data_inteira.split('/')[1])
+#print(mes)
+
+ano = int(data_inteira.split('/')[2])
+#print(ano)
+
+data_valida = False
+dia_valido = False
+mes_valido = False
+ano_valido = False
+
+#
+if 1 <= dia <= 31 and mes == '01' or 1 <= dia <= 31 and mes == '03' or 1 <= dia <= 31 and mes == '05' or 1 <= dia <= 31 and mes == '07' or 1 <= dia <= 31 and mes == '08' or 1 <= dia <= 31 and mes == 10 or 1 <= dia <= 31 and mes == 12:
+  dia_valido = True
+#print(dia_valido)
+
+if 1 <= mes <= 12:
+  mes_valido = True
+
+if ano > 0:
+  ano_valido = True
+
+if dia_valido and mes_valido and ano_valido:
+  data_valida = True
+
+if data_valida:
+  print('A data digitada é válida!')
+else:
+  print('Data inválida!')
